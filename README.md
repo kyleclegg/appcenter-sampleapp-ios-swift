@@ -3,7 +3,7 @@
 ## Requirements:
 1. Developer machine
 2. (if iOS) Apple Developer Account and an iOS Device 
-3. Source Code- aka.ms/first48
+3. Source Code- [aka.ms/first48](aka.ms/first48])
 4. VS Code (For Azure Functions work)
 5. Azure Subscription
 6. Optional- Headphones for videos/focused work
