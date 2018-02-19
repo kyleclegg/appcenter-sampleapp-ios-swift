@@ -16,7 +16,7 @@ The dev team has decided to use Visual Studio App Center automate the iOS applic
 
 For the next two days you’re going to put App Center to the test to see if it delivers on those promises.
 
-## Challenge 1 (CI-CD)
+## Challenge 1 CI-CD
 *Est. Time to Complete: 60 min*
 
 ### 1.1 Setting up Your CI/CD Pipeline (35 min)
@@ -31,7 +31,7 @@ For the next two days you’re going to put App Center to the test to see if it 
 
 **Challenge:** Setup and distribute both an internal beta distribution group using the existing build from 1.1, as well as a public test group. Test and confirm.
 
-## Challenge 2 (Test)
+## Challenge 2 Test
 *Est. Time to Complete: 3 hours*
 
 ### 2.1 Building your Test Suite (60 min)
@@ -52,7 +52,7 @@ For the next two days you’re going to put App Center to the test to see if it 
 
 **Challenge:** Integrate your testing as part of your CI/CD process, where tests will launch after Build is completed. (HINT: App Center lacks the ability to toggle a setting for integration of Build->Test but this can be done in other ways)
 
-## Challenge 3 (Learning/Monitoring your application)
+## Challenge 3 Monitoring/Learning from your application
 *Est. Time to Complete: 120 min*
 
 ### 3.1 Crash Reporting and Bug Tracking (60 min)
@@ -81,7 +81,7 @@ For the next two days you’re going to put App Center to the test to see if it 
 
 **Challenge:** Setup and debug the sample Azure Function project locally to validate you are able to achieve the desired automation. Follow it up by configuring this Function to run automatically in the cloud every minute by directly hooking up your repository to Azure.
 
-## Challenge 6 (Push)
+## Challenge 6 Push
 *Est Time to Complete: 45 min*
 
 **Scenario:** You have noticed some general usage trends with your application, and want to send a targeted push notification that includes a thank you to your active users, as well as a promo for an upcoming event. You need to create some segmented messaging based on your audiences.
@@ -90,12 +90,12 @@ For the next two days you’re going to put App Center to the test to see if it 
 
 ---
 
-## Bonus 1
+## Bonus 1 Tools Integration
 *Est Time to Complete: 30 min*
 
 **Scenario:** My team likes to be notified when new crashes come in, and has some of their own tools as part of the developer process. You would like to integrate App Center into these workflows you already have in place.
 
-**Challenge:** Use webhooks to set up a notification to a third party service you use (Slack, Teams, some other thing)
+**Challenge:** Use webhooks to set up a notification to a third party service you use (Slack, Teams, etc)
 
 ## App Center Documentation
 Begin with the [Getting Started](https://docs.microsoft.com/en-us/mobile-center/quickstarts/ios/getting-started) tutorial. After you've completed that, you can do the rest in the order below, or choose a specific tutorial to follow.
