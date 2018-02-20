@@ -1,6 +1,5 @@
 
 import UIKit
-import AppCenterCrashes
 
 class CrashViewController: UIViewController {
 
@@ -35,7 +34,6 @@ class CrashViewController: UIViewController {
                                       style: UIAlertActionStyle.destructive,
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
                                           // generate test crash
-                                          MSCrashes.generateTestCrash()
                                           fatalError()
         }))
 
