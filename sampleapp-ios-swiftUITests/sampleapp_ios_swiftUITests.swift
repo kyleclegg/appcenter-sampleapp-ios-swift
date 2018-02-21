@@ -3,6 +3,7 @@ import XCTest
 import AppCenterXCUITestExtensions
 
 class sampleapp_ios_swiftUITests: XCTestCase {
+    
     let app = ACTLaunch.launch()!
     override func setUp() {
         super.setUp()
@@ -16,14 +17,26 @@ class sampleapp_ios_swiftUITests: XCTestCase {
         super.tearDown()
     }
 
-    func testBuildLabelExists() {
-        
-        let app = XCUIApplication()
-                let element3 = app.otherElements.containing(.pageIndicator, identifier:"page 1 of 7").children(matching: .other).element
-        let element = element3.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+    func testBuildScreenTitle() {
+        let elementPage1 = app.otherElements.containing(.pageIndicator, identifier:"page 1 of 7").children(matching: .other).element
+        let element = elementPage1.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
         element.swipeLeft()
         XCTAssertTrue(XCUIApplication().staticTexts["Build"].exists)
         XCTAssertFalse(XCUIApplication().staticTexts["Buildy"].exists)
-        
     }
+    
+    func testForceCrashButton() {
+        app.otherElements.containing(.pageIndicator, identifier:"page 1 of 7").children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.pageIndicator, identifier:"page 2 of 7").children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.pageIndicator, identifier:"page 3 of 7").children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        app.otherElements.containing(.pageIndicator, identifier:"page 4 of 7").children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.swipeLeft()
+        
+        XCTAssertTrue(XCUIApplication().staticTexts["Crashes"].exists)
+        
+        app/*@START_MENU_TOKEN@*/.buttons["fatalErrorButton"]/*[[".buttons[\"Send a sample crash\"]",".buttons[\"fatalErrorButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.alerts["The app will close"].buttons["Cancel"].tap()
+        
+        XCTAssertTrue(XCUIApplication().staticTexts["Crashes"].exists)
+    }
+    
 }
