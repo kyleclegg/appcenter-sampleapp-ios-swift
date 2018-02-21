@@ -195,7 +195,7 @@
 				TargetAttributes = {
 					265586EC1EF88770001914FC = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = UPWHBCJKC3;
+						DevelopmentTeam = VKNREY8FP4;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -502,13 +502,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = UPWHBCJKC3;
+				DEVELOPMENT_TEAM = VKNREY8FP4;
 				INFOPLIST_FILE = "$(SRCROOT)/sampleapp-ios-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcenter.sampleapp.swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeomic.appcenterkyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "df665c3b-7fdb-4fdc-a487-90320d7f466f";
-				PROVISIONING_PROFILE_SPECIFIER = "Lehi Hackday";
+				PROVISIONING_PROFILE = "f492350f-e7d6-43e1-853a-3d0f372ed24d";
+				PROVISIONING_PROFILE_SPECIFIER = "App Center Test Kyle";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -521,13 +521,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = UPWHBCJKC3;
+				DEVELOPMENT_TEAM = VKNREY8FP4;
 				INFOPLIST_FILE = "$(SRCROOT)/sampleapp-ios-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.appcenter.sampleapp.swift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lifeomic.appcenterkyle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "df665c3b-7fdb-4fdc-a487-90320d7f466f";
-				PROVISIONING_PROFILE_SPECIFIER = "Lehi Hackday";
+				PROVISIONING_PROFILE = "f492350f-e7d6-43e1-853a-3d0f372ed24d";
+				PROVISIONING_PROFILE_SPECIFIER = "App Center Test Kyle";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
