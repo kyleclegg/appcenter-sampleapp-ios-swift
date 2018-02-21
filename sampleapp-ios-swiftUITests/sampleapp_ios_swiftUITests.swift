@@ -1,8 +1,9 @@
 
 import XCTest
+import AppCenterXCUITestExtensions
 
 class sampleapp_ios_swiftUITests: XCTestCase {
-    let app = XCUIApplication()
+    let app = ACTLaunch.launch()!
     override func setUp() {
         super.setUp()
         // In UI tests it is usually best to stop immediately when a failure occurs.
