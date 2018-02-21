@@ -16,7 +16,6 @@
 		267EDE4A1EFC7C5700AA5444 /* CrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EDE491EFC7C5700AA5444 /* CrashViewController.swift */; };
 		267EDE4C1EFC8AF600AA5444 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EDE4B1EFC8AF600AA5444 /* AnalyticsViewController.swift */; };
 		33E839F6F715F42CB2AA09C6 /* Pods_sampleapp_ios_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC4D6AABAFCBFE703C6D1DD /* Pods_sampleapp_ios_swiftUITests.framework */; };
-		66D890F6F1E534E5207807A1 /* Pods_sampleapp_ios_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF8F41BACD819076A65A0 /* Pods_sampleapp_ios_swift.framework */; };
 		F02E65BE1F1454DC00F657C9 /* sampleapp_ios_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E65BD1F1454DC00F657C9 /* sampleapp_ios_swiftUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D890F6F1E534E5207807A1 /* Pods_sampleapp_ios_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
