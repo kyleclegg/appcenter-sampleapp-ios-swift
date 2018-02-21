@@ -15,10 +15,14 @@ class sampleapp_ios_swiftUITests: XCTestCase {
         super.tearDown()
     }
 
-    func testSwipeUntilCrashesPage() {
-        // Assert that the crash button exists
-        let window = app.windows.element(boundBy: 0)
-        let fatalErrorButtonQuery = app.buttons.matching(identifier: "fatalErrorButton")
-        XCTAssert(window.frame.contains(fatalErrorButtonQuery.accessibilityFrame))
+    func testBuildLabelExists() {
+        
+        let app = XCUIApplication()
+                let element3 = app.otherElements.containing(.pageIndicator, identifier:"page 1 of 7").children(matching: .other).element
+        let element = element3.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
+        element.swipeLeft()
+        XCTAssertTrue(XCUIApplication().staticTexts["Build"].exists)
+        XCTAssertFalse(XCUIApplication().staticTexts["Buildy"].exists)
+        
     }
 }
