@@ -79,8 +79,9 @@ class RootViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed {
-            let viewController = pageViewController.viewControllers?.first?.restorationIdentifier
-            MSAnalytics.trackEvent("UIPageViewController changed to \(viewController ?? "not found")")
+            let destinationViewController = pageViewController.viewControllers?.first
+            let viewControllerIdentifier = destinationViewController?.restorationIdentifier ?? "not found"
+            MSAnalytics.trackEvent("UIPageViewController changed", withProperties: ["view controller" : viewControllerIdentifier])
         }
     }
     
