@@ -14,6 +14,8 @@
 		265586FD1EF88770001914FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265586FB1EF88770001914FC /* LaunchScreen.storyboard */; };
 		267EDE4A1EFC7C5700AA5444 /* CrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EDE491EFC7C5700AA5444 /* CrashViewController.swift */; };
 		267EDE4C1EFC8AF600AA5444 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267EDE4B1EFC8AF600AA5444 /* AnalyticsViewController.swift */; };
+		53B51FCDF88F5071ED69A220 /* Pods_sampleapp_ios_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8E96B3B4E1A82CCC964A29 /* Pods_sampleapp_ios_swift.framework */; };
+		997F4EE193441E2252823979 /* Pods_sampleapp_ios_swiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6200715B366AA40123FF8FEA /* Pods_sampleapp_ios_swiftUITests.framework */; };
 		F02E65BE1F1454DC00F657C9 /* sampleapp_ios_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02E65BD1F1454DC00F657C9 /* sampleapp_ios_swiftUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		267EDE491EFC7C5700AA5444 /* CrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashViewController.swift; sourceTree = "<group>"; };
 		267EDE4B1EFC8AF600AA5444 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
 		474EBD7B6F88D9C9F7A92DEB /* Pods-sampleapp-ios-swiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleapp-ios-swiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-sampleapp-ios-swiftUITests/Pods-sampleapp-ios-swiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A8E96B3B4E1A82CCC964A29 /* Pods_sampleapp_ios_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleapp_ios_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6200715B366AA40123FF8FEA /* Pods_sampleapp_ios_swiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sampleapp_ios_swiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A7ADA81F291962C6796A0F /* Pods-sampleapp-ios-swiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleapp-ios-swiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sampleapp-ios-swiftUITests/Pods-sampleapp-ios-swiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB3E204A9A15DFCBB51221B1 /* Pods-sampleapp-ios-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleapp-ios-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sampleapp-ios-swift/Pods-sampleapp-ios-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		D23CAEAA438FDFBE9A3C2472 /* Pods-sampleapp-ios-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sampleapp-ios-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-sampleapp-ios-swift/Pods-sampleapp-ios-swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B51FCDF88F5071ED69A220 /* Pods_sampleapp_ios_swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997F4EE193441E2252823979 /* Pods_sampleapp_ios_swiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +110,8 @@
 		26C8E3AA203E16F500FC4D8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A8E96B3B4E1A82CCC964A29 /* Pods_sampleapp_ios_swift.framework */,
+				6200715B366AA40123FF8FEA /* Pods_sampleapp_ios_swiftUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
