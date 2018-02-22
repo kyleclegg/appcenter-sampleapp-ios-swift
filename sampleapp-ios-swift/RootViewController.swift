@@ -1,5 +1,6 @@
 
 import UIKit
+import AppCenterAnalytics
 
 class RootViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
 
@@ -75,4 +76,12 @@ class RootViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     func presentationIndex(for _: UIPageViewController) -> Int {
         return 0
     }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if completed {
+            let viewController = pageViewController.viewControllers?.first?.restorationIdentifier
+            MSAnalytics.trackEvent("UIPageViewController changed to \(viewController ?? "not found")")
+        }
+    }
+    
 }

@@ -1,5 +1,6 @@
 
 import UIKit
+import AppCenterAnalytics
 
 class CrashViewController: UIViewController {
 
@@ -35,6 +36,7 @@ class CrashViewController: UIViewController {
                                       handler: { _ in alert.dismiss(animated: true, completion: nil)
                                           // generate test crash
 //                                          fatalError()
+                                        MSAnalytics.trackEvent("Crash event")
                                         let strings = ["hi", "friend"]
                                         print(strings[2])
         }))
